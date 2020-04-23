@@ -1,0 +1,61 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	
+}
+body
+{
+	overflow-x: hidden;
+}
+.container
+{
+	background:#00f;
+	position: relative;
+}
+.car
+{
+	position: absolute;
+	z-index: 1;
+	top:380px;
+	right: 0px;
+	animation:run 10s infinite linear;
+}
+.car2
+{
+	top: 430px;
+	right: 200px;
+	animation-duration: 10s;
+}
+.car-body img
+{
+	width:200px;
+}
+.tair
+{
+	position: absolute;
+}
+.tair img
+{
+	width: 40px;
+	animation:rotate 3s infinite linear;
+	position: relative;
+}
+.tair1
+{
+left:35px;
+top:106px;	
+}
+.tair2
+{
+	left: 128px;
+	top:106px;
+}
+@keyframes rotate
+{
+	100%{transform: rotate(-360deg);}
+}
+@keyframes run
+{
+	100%{transform: translateX(-1250px);}
+}
